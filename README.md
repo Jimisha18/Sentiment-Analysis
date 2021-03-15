@@ -16,3 +16,14 @@ downloaded (please do not upload it!), refer to Figure 1Figure 1 and Figure 2.
 want since you will be loading it yourself in your test file.
  A report explaining all the preprocessing steps you made, the design choices for your network, the
 training and testing accuracies, and any comments you have on the output.
+
+
+step-1 retrieving the data---positive and negative 
+step-2 set stopwords
+step-3 punctuation
+step-4 cleaning the data 
+
+load your saved model
+
+tokenization
+padding
