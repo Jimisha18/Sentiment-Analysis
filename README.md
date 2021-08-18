@@ -14,7 +14,7 @@ Download the dataset here (http://ai.stanford.edu/~amaas/data/sentiment/).
 
 **II. Data pre-processing:**
 
-### 1. Removal of stop words
+#### 1. Removal of stop words
 Removal of commonly used words unlikely to be useful for learning like 'and', 'if', 'the', etc.
 
 ### 2. Remove punctuation marks
