@@ -14,26 +14,26 @@ Download the dataset here (http://ai.stanford.edu/~amaas/data/sentiment/).
 
 **II. Data pre-processing:**
 
-#### 1. Removal of stop words
+##### 1. Removal of stop words
 Removal of commonly used words unlikely to be useful for learning like 'and', 'if', 'the', etc.
 
-### 2. Remove punctuation marks
+##### 2. Remove punctuation marks
 All the punctuation symbols can be filtered out cleaning our data with just the words to preprocess.
 
-### 3. Regex: 
+##### 3. Regex: 
 We make use of Regular expression for text processing.
 
-### 4. Lower Case: 
+##### 4. Lower Case: 
 The bunch of training and testing words are further transformed to lower case.
 The labels are provided to all the data of the training and testing with the labels 0 and 1. Hence, labelled data is created as per our requirement and loaded it to a CSV file for both the training and testing data.
 
-### 5. Tokenization: 
+##### 5. Tokenization: 
 The process of breaking sentences and paragraphs into individual words/tokens is called tokenization which is a very essential step for text analysis. 
 Using tokenizer, we can label each word and provide a dictionary of the words being used in the sentences. We create an instance of tokenizer and assign a hyperparameter num_words to 4000. This essentially takes the most common 4000 words and tokenize them. Further, the fit_on_texts() method is used to encode the sentences.
 Passing set of sentences to the ‘text_to_sequences()’ method converts the sentences to their labelled equivalent based on the corpus of words passed to it. If the corpus has a word missing that is present in the sentence, the word while being encoded to the label equivalent is omitted and the rest of the words are encoded and printed. 
 To overcome such a problem, we can either use a huge corpus of words or use a hyperparameter ‘oov_token’ and assign it to a certain value which will be used to encode words previously unseen in the corpus. ‘oov_token’ can be assigned to anything but one should assign a unique value to it so that it isn’t confused with an original word.
 
-### 6. Padding:
+##### 6. Padding:
 Padding is done after the sentence, the hyperparameter padding is set to ‘post’. Padding is generally done with reference to the longest sentence, however the hyperparameter maxlen can be provided to override it and define the maximum length of the sentence.
 
 Using the training and testing data for network, performed data preprocessing to prepare the data for NLP. 
